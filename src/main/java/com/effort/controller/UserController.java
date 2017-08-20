@@ -51,19 +51,6 @@ public class UserController {
 		return userService.saveUser(user);
 	}
 	
-	@PostMapping("/getJson")
-	public String getJson(@RequestBody String url){
-		
-		User user = new User();
-		user.setUId(url);
-		user.setUName("Effort");
-		user.setUage(27);
-		JSONObject jsonObj = new JSONObject(user);
-		logger.info(jsonObj);
-		return jsonObj.toString().trim();
-	}
-	
-	
 	private static Map iterateElement(Element element){
 		List nodeList = element.getChildren();
 		Element et = null;
