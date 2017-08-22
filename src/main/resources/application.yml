@@ -5,6 +5,26 @@ spring:
     username: sa
     password: root
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    dbcp:
+      min-idle: 1
+      max-active: 2
+      initial-size: 1
+      time-between-eviction-runs-millis: 3000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'UId' FROM User_table WHERE 1 = 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+    dbcp2:
+      min-idle: 1
+      max-idle: 2
+      initial-size: 1
+      time-between-eviction-runs-millis: 3000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 'UId' FROM User_table WHERE 1 = 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
 mybatis:
   mapperLocations: classpath*:com/effort/mappers/*.xml
   typeAliasesPackage: com.effort.bean
