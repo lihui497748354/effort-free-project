@@ -11,20 +11,25 @@ spring:
       initial-size: 1
       time-between-eviction-runs-millis: 3000
       min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 'UId' FROM User_table WHERE 1 = 1
+      validation-query: select 1
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+
     dbcp2:
       min-idle: 1
       max-idle: 2
       initial-size: 1
       time-between-eviction-runs-millis: 3000
       min-evictable-idle-time-millis: 300000
-      validation-query: SELECT 'UId' FROM User_table WHERE 1 = 1
+      validation-query: select 1
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
 mybatis:
-  mapperLocations: classpath*:com/effort/mappers/*.xml
-  typeAliasesPackage: com.effort.bean
+  mapper-locations: classpath:META-INF/mybatis/mapper/*.xml
+  config-location: classpath:mybatis-config.xml

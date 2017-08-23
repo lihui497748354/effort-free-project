@@ -12,7 +12,6 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    @Select("SELECT * FROM User_table WHERE 1 = 1")
     List<User> selectAllUser();
 
 }
