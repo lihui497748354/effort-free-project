@@ -31,6 +31,6 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 20
 mybatis:
-  mapper-locations: classpath:effort/mapper/*.xml
+  mapper-locations: classpath:daoMapper/*.xml
   config-location: classpath:mybatis-config.xml
   type-aliases-package: com.effort.bean
