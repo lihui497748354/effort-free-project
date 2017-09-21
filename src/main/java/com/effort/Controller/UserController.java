@@ -1,7 +1,7 @@
 package com.effort.Controller;
 
 import com.effort.bean.User;
-import com.effort.dao.UserMapper;
+import com.effort.Dao.UserMapper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

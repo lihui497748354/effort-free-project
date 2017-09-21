@@ -1,4 +1,4 @@
-package com.effort.service;
+package com.effort.Util;
 
 import org.jdom.Document;
 import org.jdom.Element;

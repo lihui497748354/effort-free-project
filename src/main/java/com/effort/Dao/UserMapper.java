@@ -1,8 +1,7 @@
-package com.effort.dao;
+package com.effort.Dao;
 
 import com.effort.bean.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
