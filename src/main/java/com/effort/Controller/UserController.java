@@ -19,6 +19,7 @@ import java.util.List;
 public class UserController {
 
     private static Log logger = LogFactory.getLog(UserController.class);
+
     @Autowired
     private UserMapper userMapper;
 
